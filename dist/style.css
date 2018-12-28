@@ -1,0 +1,42 @@
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: black; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.background-transparant {
+  background: transparent; }
+
+.background-white {
+  background: white; }
+
+.no-padding {
+  padding: 0px; }
+
+div.header-business-types {
+  position: fixed;
+  background: white;
+  top: 55px;
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  border-radius: 0px;
+  border: none; }
+  div.header-business-types div.business-type-shadow {
+    box-shadow: 1px 3px 5px #707070;
+    margin-top: -25px; }
+  div.header-business-types div.business-type-container {
+    padding-top: 20px;
+    text-align: left; }
+    div.header-business-types div.business-type-container a {
+      margin-bottom: 15px; }
+  div.header-business-types div.business-type-container-sm {
+    max-width: 90%;
+    margin-left: auto;
+    text-align: left; }
+    div.header-business-types div.business-type-container-sm a {
+      margin-bottom: 5px; }
+

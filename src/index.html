@@ -1,0 +1,611 @@
+<html>
+  <head>
+    <title></title>
+    <script language='JavaScript'>
+    var txt="Moka Training SEIT ";
+    var speed=500;
+    var refresh=null;
+    function action() { document.title=txt;
+    txt=txt.substring(1,txt.length)+txt.charAt(0);
+    refresh=setTimeout("action()",speed);}action();
+    </script>
+    <link href="https://pbs.twimg.com/profile_images/552749630207700992/iBA6Q9P8_400x400.png" rel="icon" type="image/png">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top background-white navbar-header-static">
+        <div class="container container-100">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-collapse collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand header-menu-static header-logo-in" href="/"><img class="logo-moka-header" width="103" height="29" alt="logo moka header" src="https://www.mokapos.com/assets/home/logo-moka-f45408be45f25e06608a8da66ee1e44f.svg"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse background-white">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                      <a class="navbar-brand header-menu-static header-logo-out" href="/"><img class="logo-moka-header" width="103" height="29" alt="logo moka header" src="https://www.mokapos.com/assets/home/logo-moka-f45408be45f25e06608a8da66ee1e44f.svg"></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-lg visible-sm visible-xs">
+                    <li class="header-menu-static visible-sm visible-xs">
+                        <a href="/" class="text-center selected">Home</a>
+                    </li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/about" class="text-center " id="about-menu">ABOUT</a>
+                    </li>
+                    <li class="header-menu-static">
+                      <a href="#" class="business-type-menu text-center " id="menu2" data-toggle="dropdown">BUSINESS TYPES</a>
+                      <div class="header-business-types dropdown-menu" role="menu" aria-labelledby="menu2">
+                        <div class="business-type-container visible-md visible-lg">
+                          <div class="row business-type-shadow col-xs-12">
+                          </div>
+                          <div class="col-xs-9 col-xs-offset-3">
+                            <a href="https://www.mokapos.com/business_type/quick_service_restaurant" class="business-types-list col-xs-3 " id="support-menu">QUICK SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/coffee_shop" class="business-types-list col-xs-2 " id="support-menu">COFFEE SHOP</a>
+                            <a href="https://www.mokapos.com/business_type/barbershop" class="business-types-list col-xs-2 " id="support-menu">BARBERSHOP</a>
+                          </div>
+                          <div class="col-xs-9 col-xs-offset-3">
+                            <a href="https://www.mokapos.com/business_type/full_service_restaurant" class="business-types-list col-xs-3 " id="support-menu">FULL SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/retail" class="business-types-list col-xs-2 " id="support-menu">RETAIL</a>
+                          </div>
+                        </div>
+                        <div class="business-type-container-sm visible-xs visible-sm">
+                          <div class="row">
+                            <a href="https://www.mokapos.com/business_type/quick_service_restaurant" class="business-types-list-sm col-xs-12 " id="support-menu">QUICK SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/full_service_restaurant" class="business-types-list-sm col-xs-12 " id="support-menu">FULL SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/coffee_shop" class="business-types-list-sm col-xs-12 " id="support-menu">COFFEE SHOP</a>
+                            <a href="https://www.mokapos.com/business_type/retail" class="business-types-list-sm col-xs-12 " id="support-menu">RETAIL</a>
+                            <a href="https://www.mokapos.com/business_type/barbershop" class="business-types-list-sm col-xs-12 " id="support-menu">BARBERSHOP</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/features" class="text-center " id="features-menu">FEATURES </a>
+                    </li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/pricing" class="text-center " id="pricing-menu">PRICING</a>
+                    </li>
+                    <li class="header-menu-static">
+                      <a href="https://backoffice.mokapos.com/login" class="text-center" title="Sign In" id="login-menu">LOGIN</a>
+                    </li>
+                    <li>
+                        <ul class="pager btn-sign-up-now-header">
+                            <li>
+                                <a href="https://backoffice.mokapos.com/register" class="btn-sign-up-now-header" onclick="mixpanelRegistrationStart('Sign up now');" title="Sign Up" id="signup-menu">
+                                  <span class="btn-sign-up-now-header">SIGN UP NOW</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-menu-static flag visible-xs visible-sm">
+                        <ul>
+                          <li class="list-unstyled">
+                            <a class="" href="https://www.mokapos.com/en">
+                              <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/us-e8fc3d1899df038c89e7a35bd15d8b91.png">
+                              Inggris
+                        </a>
+                         </li>
+                          <li class="list-unstyled">
+                            <a class="selected" href="/">
+                              <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/id-c5f9eb0fe47901a3a31477bd67ef4f24.png">
+                              Indonesia
+                          </a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="header-menu-static visible-md visible-lg">
+                      <a href="tel:1500970" class="a-phone"><i class="earphone"></i> <span class="call-us-header">1500970</span></a>
+                    </li>
+                    <li class="dropdown-lang visible-md visible-lg">
+                      <button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+                          <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/id-c5f9eb0fe47901a3a31477bd67ef4f24.png">
+                          <span class="active-lang">Indonesia</span>
+                      </button>
+                      <ul class="dropdown-menu header-dropdown" role="menu" aria-labelledby="menu1">
+                        <li role="presentation">
+                            <a class="" href="https://www.mokapos.com/en">
+                              <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/us-e8fc3d1899df038c89e7a35bd15d8b91.png">
+                              Inggris
+                        </a>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-md">
+                    <li class="header-menu-static visible-sm visible-xs">
+                        <a href="/" class="text-center selected">Home</a>
+                    </li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/about" class="text-center ">ABOUT</a>
+                    </li>
+                    <li class="header-menu-static">
+                      <a href="#" class="business-type-menu text-center " id="menu2" data-toggle="dropdown">BUSINESS TYPES</a>
+                      <div class="header-business-types dropdown-menu" role="menu" aria-labelledby="menu2">
+                        <div class="business-type-container visible-md">
+                          <div class="row business-type-shadow col-xs-12">
+                          </div>
+                          <div class="row col-xs-10 col-xs-offset-2">
+                            <a href="https://www.mokapos.com/business_type/quick_service_restaurant" class="business-types-list col-xs-3 " id="support-menu">QUICK SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/coffee_shop" class="business-types-list col-xs-2 " id="support-menu">COFFEE SHOP</a>
+                            <a href="https://www.mokapos.com/business_type/barbershop" class="business-types-list col-xs-2 " id="support-menu">BARBERSHOP</a>
+                          </div>
+                          <div class="row col-xs-10 col-xs-offset-2">
+                            <a href="https://www.mokapos.com/business_type/full_service_restaurant" class="business-types-list col-xs-3 " id="support-menu">FULL SERVICE RESTAURANT</a>
+                            <a href="https://www.mokapos.com/business_type/retail" class="business-types-list col-xs-2 " id="support-menu">RETAIL</a>
+                          </div>
+                        </div>
+                    </div></li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/features" class="text-center ">FEATURES</a>
+                    </li>
+                    <li class="header-menu-static">
+                        <a href="https://www.mokapos.com/pricing" class="text-center ">PRICING</a>
+                    </li>
+                    <li class="header-menu-static">
+                      <a href="https://backoffice.mokapos.com/login" class="text-center" title="Sign In">LOGIN</a>
+                    </li>
+                    <li class="header-menu-static">
+                      <ul class="pager btn-sign-up-now-header">
+                        <li>
+                          <a href="https://backoffice.mokapos.com/register" onclick="mixpanelRegistrationStart('Sign up now');" class="btn-sign-up-now-header visible-md visible-lg" title="Sign Up">
+                            <span class="btn-sign-up-now-header">SIGN UP NOW</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header-menu-static flag visible-xs visible-sm">
+                      <ul>
+                        <li class="list-unstyled">
+                          <a class="" href="/en">
+                          <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/us-e8fc3d1899df038c89e7a35bd15d8b91.png">
+                          Eng
+                        </a>
+                        </li>
+                        <li class="list-unstyled">
+                          <a class="" href="/">
+                            <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/id-c5f9eb0fe47901a3a31477bd67ef4f24.png">
+                            Ind
+                        </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header-menu-static visible-md visible-lg">
+                      <a href="tel:1500970" class="a-phone"><i class="earphone"></i> <span class="call-us-header">1500970</span></a>
+                    </li>
+                    <li class="dropdown-lang visible-md visible-lg">
+                      <button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+                          <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/id-c5f9eb0fe47901a3a31477bd67ef4f24.png">
+                          <span class="active-lang">Ind</span>
+                      </button>
+                      <ul class="dropdown-menu header-dropdown" role="menu" aria-labelledby="menu1">
+                        <li role="presentation">
+                            <a class="" href="/en">
+                              <img class="block" alt="" width="23" height="17" src="https://www.mokapos.com/assets/home/us-e8fc3d1899df038c89e7a35bd15d8b91.png">
+                              Eng
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+      <div class="container-fluid section-1 container-content-index">
+        <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block"></div>
+                <div class="slider-text-area">
+                  <div class="slider-text">
+                    <h1 class="index-selling ">
+                      Jualan
+                      <br>
+                      Jadi Gampang
+                      <br>
+                    </h1>
+                    <p class="sub-slider-text">
+                    Pokoknya pake MOKA weh lah.</br> Asli, gampang dan gak ribet. </br> Paw*n POS mah dijamin lewat !!!</br> Saya sudah #PercayaMoka. Anda kapan?</p>
+                    <ul class="pager btn-sign-up-now-header">
+                                <li >
+                                  <a href="https://backoffice.mokapos.com/register" onclick="mixpanelRegistrationStart('COBA MOKA GRATIS 14 HARI');" class="btn-sign-up-now-header pull-left coba-moka-gratis">
+                                    <span class="btn-sign-up-now-header">SOK COBA MOKA GRATIS 14 HARI
+                                    </span>
+                                  </a>
+                                  <div class="btn-play">
+                                  </div>
+                                </li>
+                                <br>
+                                <br>
+                                <li>
+                                  <a id="watchnowbuttonindex" href="#" class="btn-sign-up-now-header pull-left coba-moka-gratis" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube.com/embed/XtKskpUdGF0" style="padding-top:3px; padding-left:5px">
+                                      <span class="btn-sign-up-now-header">TINGALI VIDEONYA DIDIEU
+                                      </span>
+                                  </a>
+                                </li>
+                            </ul>
+                            <br>
+                            <br>
+                            <ul class="social-store">
+                                <li>
+                                  <a href="https://itunes.apple.com/us/app/moka-pos/id955811575" target="_blank" class="social-app-store">
+                                    <img alt="button to download mokapos mobile apps from appstore" class="app-store-normal" src="https://www.mokapos.com/assets/home/app-store-button-normal-70281c796a7eeda72873141f0fd20377.svg" width="158" height="59">
+                                    <a href="https://play.google.com/store/apps/details?id=com.mokapos.android" target="_blank" class="social-google-play">
+                                <img alt="button to download mokapos mobile apps from google play store" class="google-play-normal-hover" src="https://www.mokapos.com/assets/home/google-play-button-rollover-8ac3e014730e0eca0adbe1e55dad7ce2.svg" width="158" height="59">
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="container section-2">
+       <div class="row">
+         <div class="col-lg-12 text-center">
+           <h2 class="section-heading visible-md visible-lg">We Bring Your Business To The Next Level</h2>
+           <h2 class="section-heading visible-xs">We Bring Your Business To The Next Level</h2>
+           <h2 class="section-heading visible-sm">We Bring Your Business To The Next Level</h2>
+           <h4 class="section-subheading text-muted visible-md visible-lg">Moka adalah sistem kasir yang memakai teknologi sistem Cloud untuk bisnis kecil menengah, mulai<br>dari butik baju, restoran, hingga pangkas rambut yang memiliki banyak cabang.</h4>
+           <h4 class="section-subheading text-muted visible-xs">Moka adalah sistem kasir yang memakai teknologi sistem Cloud untuk bisnis kecil menengah, mulai dari butik baju, restoran, hingga pangkas rambut yang memiliki banyak cabang.</h4>
+           <h4 class="section-subheading text-muted visible-sm">Moka adalah sistem kasir yang memakai teknologi sistem Cloud untuk<br>bisnis kecil menengah, mulai dari butik baju, restoran, hingga pangkas rambut yang memiliki banyak cabang.</h4>
+         </div>
+       </div>
+       <div class="row text-center">
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 circle-box">
+           <span class="circle-img">
+             <img alt="food and beverages business icon" src="https://www.mokapos.com/assets/home/fnb-939cf3589a07aa16073b634a5ba76767.png" class="visible-md visible-lg fb-circle" width="122" height="122">
+             <img alt="food and beverages business icon" src="https://www.mokapos.com/assets/home/fnb-939cf3589a07aa16073b634a5ba76767.png" class="visible-sm fb-circle" width="91" height="91">
+             <img alt="food and beverages business icon" src="https://www.mokapos.com/assets/home/fnb-939cf3589a07aa16073b634a5ba76767.png" class="visible-xs fb-circle" width="90" height="90">
+           </span>
+           <h4 class="service-heading">F&amp;B</h4>
+           <p class="text-muted circle-image-description visible-lg">Cocok untuk restoran cepat saji, food<br>truck, bakery, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-md">Cocok untuk restoran cepat saji,<br> food truck, bakery, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-sm">Cocok untuk restoran cepat saji,<br> food truck, bakery, dan<br>lainnya.</p>
+           <p class="text-muted circle-image-description visible-xs box-center">Cocok untuk restoran cepat saji,<br> food truck, bakery, dan lainnya.</p>
+           <div class="clearfix"></div>
+           <h5 class="service-heading">
+             <a href="https://www.mokapos.com/#" class="watch-video-link" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube.com/embed/ZMv1ai3goGg">
+               Watch Video
+               <span class="glyphicon glyphicon-play"></span>
+             </a>
+           </h5>
+         </div>
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 circle-box">
+           <span class="circle-img">
+             <img alt="service business icon" src="https://www.mokapos.com/assets/home/barbershop-9ed215ab82f0c5cc21a1e373b4de52a7.png" class="visible-md visible-lg fb-circle" width="122" height="122">
+             <img alt="service business icon" src="https://www.mokapos.com/assets/home/barbershop-9ed215ab82f0c5cc21a1e373b4de52a7.png" class="visible-sm fb-circle" width="91" height="91">
+             <img alt="service business icon" src="https://www.mokapos.com/assets/home/barbershop-9ed215ab82f0c5cc21a1e373b4de52a7.png" class="visible-xs fb-circle" width="90" height="90">
+           </span>
+           <h4 class="service-heading">Service Business</h4>
+           <p class="text-muted circle-image-description visible-md visible-lg">Cocok untuk barbershop, salon<br> kecantikan, spa &amp; refleksi, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-sm">Cocok untuk barbershop, salon<br> kecantikan, spa &amp; refleksi, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-xs">Cocok untuk barbershop, salon<br> kecantikan, spa &amp; refleksi, dan lainnya.</p>
+           <h5 class="service-heading">
+             <a href="https://www.mokapos.com/#" class="watch-video-link" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube.com/embed/jJyDCB8dZIY">
+               Watch Video
+               <span class="glyphicon glyphicon-play"></span>
+             </a>
+           </h5>
+         </div>
+         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 circle-box">
+           <span class="circle-img">
+             <img alt="retail business icon" src="https://www.mokapos.com/assets/home/retail-10f61ab249124ff31e9008a70877586c.png" class="visible-md visible-lg fb-circle" width="122" height="122">
+             <img alt="retail business icon" src="https://www.mokapos.com/assets/home/retail-10f61ab249124ff31e9008a70877586c.png" class="visible-sm fb-circle" width="91" height="91">
+             <img alt="retail business icon" src="https://www.mokapos.com/assets/home/retail-10f61ab249124ff31e9008a70877586c.png" class="visible-xs fb-circle" width="90" height="90">
+           </span>
+           <h4 class="service-heading">Retail</h4>
+           <p class="text-muted circle-image-description visible-lg">Cocok untuk toko baju, toko buku,<br> bazaar, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-md">Cocok untuk toko baju, toko buku, bazaar, dan lainnya.</p>
+           <p class="text-muted circle-image-description visible-xs visible-sm">Cocok untuk toko baju,<br> toko buku, bazaar, dan lainnya.</p>
+           <h5 class="service-heading">
+             <a href="https://www.mokapos.com/#" class="watch-video-link" data-toggle="modal" data-target="#videoModal" data-thevideo="https://www.youtube.com/embed/HmBAPEiows0">
+               Watch Video
+               <span class="glyphicon glyphicon-play"></span>
+             </a>
+           </h5>
+         </div>
+       </div>
+     </div>
+     <div class="container-fluid section-34">
+         <div class="container-fluid section-3">
+           <div class="pricing">
+             <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 box-pricing">
+               <div class="panel panel-default">
+                 <div class="panel-body">
+                   <div class="row">
+                     <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 text-center">
+                       <div class="row">
+                         <h2 class="section-pricing visible-md visible-lg">All In Pricing</h2>
+                         <h2 class="section-pricing visible-sm">All In Pricing</h2>
+                         <h2 class="section-pricing visible-xs">All In Pricing</h2>
+                         <h4 class="section-pricing visible-lg">Kami menawarkan kesulitan<br> dan support secara berbayar. Gak GRATIS loh yah! INI BAYAR.</h4>
+                         <h4 class="section-pricing visible-md">Kami menawarkan kesulitan dan support secara berbayar. Gak GRATIS loh yah! INI BAYAR.</h4>
+                         <h4 class="section-pricing visible-sm">Kami menawarkan kesulitan<br> dan support secara berbayar. Gak GRATIS loh yah! INI BAYAR.</h4>
+                         <h4 class="section-pricing visible-xs col-xs-10 box-center">Kami menawarkan kesulitan dan support secara berbayar. Gak GRATIS loh yah! INI BAYAR.</h4>
+                       </div>
+                       <div class="row">
+                         <img class="img-price-250 visible-md visible-lg" src="https://s3-ap-southeast-1.amazonaws.com/image.mokapos.com/growth/price-image/pricing.svg">
+                         <img class="img-price-250 visible-xs" src="https://s3-ap-southeast-1.amazonaws.com/image.mokapos.com/growth/price-image/pricing.svg">
+                         <img class="img-price-250 visible-sm" src="https://s3-ap-southeast-1.amazonaws.com/image.mokapos.com/growth/price-image/pricing.svg">
+                         <div class="box-btn-free-trial visible-md visible-lg">
+                           <a class="btn btn-default green-style box-center" href="https://backoffice.mokapos.com/register" onclick="mixpanelRegistrationStart('COBA GRATIS SEKARANG');">
+                             COBA GRATIS SEKARANG
+                           </a>
+                         </div>
+                         <div class="box-btn-free-trial visible-xs visible-sm">
+                           <a class="btn btn-default green-style visible-sm" href="https://backoffice.mokapos.com/register" onclick="mixpanelRegistrationStart('COBA GRATIS SEKARANG');">
+                             COBA GRATIS SEKARANG
+                           </a>
+                           <a class="btn btn-default green-style visible-xs" href="https://backoffice.mokapos.com/register" onclick="mixpanelRegistrationStart('COBA GRATIS SEKARANG');">
+                             COBA GRATIS SEKARANG
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="row details-pricing visible-md visible-lg">
+                       <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                         <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/no-contract-b9ada0ea6e75a8839e7c9c2ef2ac084c.png"></span>
+                         No Contract
+                       </div>
+                       <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                         <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/unlimited-product-b7448bec1b4ec225ceb5342f87dd69ce.png"></span>
+                         Unlimited Products
+                       </div>
+                       <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                         <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/free-support-0eb863947e8c4eef09b79697ce5cd775.png"></span>
+                         Free Support
+                       </div>
+                     </div>
+                     <div class="row details-pricing visible-xs visible-sm">
+                       <div class="col-xs-12 col-sm-12 box-border-top">
+                         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                           <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/no-contract-b9ada0ea6e75a8839e7c9c2ef2ac084c.png"></span>
+                           <span class="clearfix pricing"></span>
+                           <span class="text-pricing visible-sm">No Contract</span>
+                           <span class="text-pricing visible-xs">No<br> Contract</span>
+                         </div>
+                         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                           <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/unlimited-product-b7448bec1b4ec225ceb5342f87dd69ce.png"></span>
+                           <span class="clearfix pricing"></span>
+                           <span class="text-pricing">Unlimited Products</span>
+                         </div>
+                         <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                           <span class="img-details-pricing"><img src="https://www.mokapos.com/assets/home/free-support-0eb863947e8c4eef09b79697ce5cd775.png">
+                           </span>
+                           <span class="clearfix pricing"></span>
+                           <span class="text-pricing">Free Support</span>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="container-fluid section-4">
+           <div class="testimonial-box">
+             <div class="row">
+               <div>
+                 <h2 class="text-center customer-say visible-md visible-lg">
+                   Naon ceuk Customer kami?
+                 </h2>
+                 <h2 class="text-center customer-say visible-xs">
+                   Naon ceuk Customer kami?
+                 </h2>
+                 <h2 class="text-center customer-say visible-sm">
+                   Naon ceuk Customer kami?
+                 </h2>
+                 <h4 class="text-center customer-testimonials visible-md visible-lg">
+                   Jangan mudah percaya dengan testimoni dibawah ini. Bisa saja opini. Hehehe
+                 </h4>
+                 <h4 class="text-center customer-testimonials visible-sm">
+                   Jangan mudah percaya dengan testimoni dibawah ini. Bisa saja opini. Hehehe
+                 </h4>
+                 <h4 class="text-center customer-testimonials visible-xs">
+                   Jangan mudah percaya dengan testimoni dibawah ini. Bisa saja opini. Hehehe
+                 </h4>
+                 <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-xs-12 col-sm-12 box-carousel text-center">
+                   <div id="carousel-example-generic" class="carousel slide height" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                       <li data-target="#carousel-example-generic" data-slide-to="0" class="">
+                       </li>
+                       <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+                     </ol>
+
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+
+                       <!-- First slide -->
+                       <div class="item">
+                         <div class="carousel-caption">
+                           <h3 data-animation="animated bounceInLeft">
+                             <img class="f&amp;b-circle" width="94" height="74" src="https://www.mokapos.com/assets/home/testimonial1-274ad2579699f87cb9ab56cef716f085.png">
+                           </h3>
+                           <h3 class="carousel-description" data-animation="animated bounceInRight">
+                             "Moka POS kadang suka ngeCrash euy. Di fix atuh"
+                           </h3>
+                           <h5 class="carousel-owner-name">Chief BARBARshop  •  M.Furqonudin (Senior QA)</h5>
+                         </div>
+                       </div><!-- /.item -->
+
+                       <!-- Second slide -->
+                       <div class="item">
+                         <div class="carousel-caption">
+                           <h3 data-animation="animated bounceInLeft">
+                             <img class="f&amp;b-circle" width="75" height="75" src="https://www.mokapos.com/assets/home/testimonial2-97e106166937f47c39fda40a28d0457d.png">
+                           </h3>
+                           <h3 class="carousel-description" data-animation="animated bounceInRight">
+                             "Fantastic application. Tapi horeang euy perbulan nya"
+                           </h3>
+                           <h5 class="carousel-owner-name">Sinar Garut  •  Anta Prima (Owner)</h5>
+                         </div>
+                       </div><!-- /.item -->
+
+                       <!-- Third slide -->
+                       <div class="item">
+                         <div class="carousel-caption">
+                           <h3 data-animation="animated bounceInLeft">
+                             <img height="60" src="https://www.mokapos.com/assets/home/testimonial4-9e86532c5bbd864dfefdf9b1e35988dc.png">
+                           </h3>
+                           <h3 class="carousel-description" data-animation="animated bounceInRight">
+                             <span class="visible-xs">
+                               "MokaPOS membantu operasional di Jolie Clothing, tapi kadang suka ngeBug"
+                             </span>
+                             <span class="visible-md visible-lg visible-sm">
+                               "Tapi MokaPOS Okelah yah"
+                             </span>
+                           </h3>
+                           <h5 class="carousel-owner-name">Juminten (Mahasiswa Washington)</h5>
+                         </div>
+                       </div><!-- /.item -->
+
+                       <div class="item item-4 active">
+                         <div class="carousel-caption">
+                           <h3 data-animation="animated bounceInLeft">
+                             <img width="92" height="92" class="f&amp;b-circle" src="https://www.mokapos.com/assets/home/testimonial3-eef660da0bd5439ce3b040a22ca54acc.png">
+                           </h3>
+                           <h3 class="carousel-description" data-animation="animated bounceInRight">
+                             <span class="visible-xs">
+                               "Moka pos sangat membantu layanan kasir di salon. Terima Kasih Icad"
+                             </span>
+                             <span class="visible-md visible-lg visible-sm">
+                               "Moka pos sangat membantu layanan kasir di salon, saya dapat terus memantau pendapatan meski saya diluar kota. Terimakasih Icad"
+                             </span>
+
+                           </h3>
+                           <h5 class="carousel-owner-name">Campur Sari Salon &amp; Spa  •  (Service Salon)</h5>
+                         </div>
+                       </div><!-- /.item -->
+
+                       <div class="item">
+                         <div class="carousel-caption">
+                           <h3 data-animation="animated bounceInLeft">
+                             <img width="132" class="f&amp;b-circle" src="https://www.mokapos.com/assets/home/testimonial5-7bab876cd9f2bc2fc58d04110d77c01a.png">
+                           </h3>
+                           <h3 class="carousel-description" data-animation="animated bounceInRight">
+                             <span class="visible-xs">
+                               "MOKAPOS is a really helpful apps."
+                             </span>
+                             <span class="visible-md visible-lg visible-sm">
+                               "MOKAPOS is a really helpful apps. Okelah "
+                             </span>
+                           </h3>
+                           <h5 class="carousel-owner-name">Hai Kentang ( F&amp;B Business)</h5>
+                         </div>
+                       </div><!-- /.item -->
+
+                     </div><!-- /.carousel-inner -->
+
+                     <!-- Controls -->
+                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                     </a>
+
+                   </div><!-- /.carousel -->
+                 </div>
+                 <div class="clearfix"></div>
+                 <div class="row col-md-11 col-lg-10 box-center col-xs-12 col-sm-12 box-featured text-center">
+                   <div class="visible-md visible-lg visible-sm visible-xs">
+                     <div class="col-lg-4 col-xs-4 col-sm-4 first-divider padding-right-1">
+                       <div class="grpelem" id="first-divider" data-content-guid="u2525_content"><!-- simple frame --></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-xs-4 col-sm-4 text-center box-as-featured">
+                       <div class="clearfix grpelem text-center" id="second-divider" data-content-guid="u2528-4_content"><!-- content -->
+                         <h2 class="visible-md visible-sm visible-lg">Seit Test Week 1</h2>
+                         <h2 class="visible-xs">Seit Test Week 1</h2>
+                       </div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-xs-4 col-sm-4 padding-left-1">
+                       <div class="grpelem" id="last-divider" data-content-guid="u2531_content"><!-- simple frame --></div>
+                     </div>
+                     <div class="clearfix"></div>
+                   </div>
+                   <div class="featured visible-xs">
+                     <div class="col-xs-12 box-center">
+                       <div class="col-xs-4">
+                         <span class="no-decoration">
+                           <img src="https://www.mokapos.com/assets/home/techinasia-logo-ad348b5df21fc1524601c80e2662284c.png" width="112" height="17" class="img-featured visible-xs">
+                         </span>
+                       </div>
+                       <div class="col-xs-4">
+                         <span class="no-decoration center-image">
+                           <img src="https://www.mokapos.com/assets/home/cnn-logo-8cd5f4fd4d1fbe0f29ee8f07c97ef523.png" width="35" height="17" class="img-featured center cnn visible-xs">
+                         </span>
+                       </div>
+                       <div class="col-xs-4">
+                         <span class="no-decoration">
+                           <img src="https://www.mokapos.com/assets/home/bloomberg-logo-6f10f396868a4cd5b56a39ab918feba3.png" width="90" height="18" class="img-featured right visible-xs">
+                         </span>
+                       </div>
+                     </div>
+                     <div class="col-xs-12 box-center">
+                       <div class="col-xs-4">
+                         <span class="no-decoration">
+                           <img src="https://www.mokapos.com/assets/home/dailysocial-d15e50735f791faf08eadf4511fc3933.png" width="80" height="18" class="img-featured visible-xs">
+                         </span>
+                       </div>
+                       <div class="col-xs-4">
+                         <span class="no-decoration center-image">
+                           <img src="https://www.mokapos.com/assets/home/makemac-logo-7f3e9646b5e1bae835595b2193029295.png" width="89" height="17" class="img-featured makemac center visible-xs">
+                         </span>
+                       </div>
+                       <div class="col-xs-4 last-featured">
+                         <span class="no-decoration">
+                           <img src="https://www.mokapos.com/assets/home/businessweek-logo-e9988dac61df11d33857b870b55df2f0.png" width="81" height="12" class="img-featured right visible-xs">
+                         </span>
+                       </div>
+                     </div>
+                   <div class="clearfix"></div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">			</button>
+            <div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZMv1ai3goGg"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row copy-right">
+    <h5 class="text-center">
+      &nbsp;Punten, izin ©Copyright ya. Ini buat test masuk SEIT (27 Desember 2018). Udah gini aja.
+    </h5>
+  </div>
+  </body>
+</html>
